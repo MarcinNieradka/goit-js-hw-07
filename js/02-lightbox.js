@@ -17,11 +17,4 @@ galleryItems.forEach(item => {
 
 // mainGallery.append(...galleryContainer);
 
-// mainGallery.addEventListener('click', e => {
-//   e.preventDefault();
-//   if (e.target.nodeName !== 'IMG') {
-//     return;
-//   }
-// });
-
 const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
