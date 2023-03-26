@@ -39,7 +39,6 @@ mainGallery.addEventListener('click', e => {
             e => {
               if (e.key === 'Escape') {
                 instance.close();
-                window.removeEventListener(Object, close);
               }
             },
             { once: true }
