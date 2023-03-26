@@ -34,7 +34,7 @@ mainGallery.addEventListener('click', e => {
 	`,
       {
         onShow: instance => {
-          window.addEventListener(
+          document.addEventListener(
             'keydown',
             e => {
               if (e.key === 'Escape') {
