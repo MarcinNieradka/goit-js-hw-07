@@ -34,11 +34,16 @@ mainGallery.addEventListener('click', e => {
 	`,
       {
         onShow: instance => {
-          window.addEventListener('keydown', e => {
-            if (e.key === 'Escape') {
-              instance.close();
-            }
-          });
+          window.addEventListener(
+            'keydown',
+            e => {
+              if (e.key === 'Escape') {
+                instance.close();
+                window.removeEventListener(Object, close);
+              }
+            },
+            { once: true }
+          );
         },
       }
     )
